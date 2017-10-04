@@ -1,0 +1,64 @@
+.order-form {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.order-form__field {
+  border: none;
+  padding: 0;
+}
+
+.order-form__legend {
+  color: @green-light;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.order-form__legend::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid @green-light;
+  height: 1px;
+  width: 198px;
+  top: 9px;
+  left: 64px;
+}
+
+.order-form__legend--small::after {
+  content: "";
+  width: 180px;
+}
+
+.order-form__initials-label,
+.order-form__phone-label,
+.order-form__email-label {
+  display: block;
+}
+
+.order-form__initials-input,
+.order-form__phone-input,
+.order-form__email-input {
+  border: none;
+  border-bottom: 2px solid @black;
+  width: 100%;
+}
+
+.order-form__textarea {
+  resize: none;
+  border: 1px solid @black;
+  width: 100%;
+  min-height: 140px;
+}
+
+.order-form__button {
+  color: @black;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
