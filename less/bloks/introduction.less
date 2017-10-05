@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.introduction__delivery {
+  display: none;
+}
+
 .introduction__title {
   font-family: @font-face;
   font-weight: bold;
@@ -85,5 +89,138 @@
     opacity: 0.5;
     left: 235px;
     top: 25px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+
+  .introduction-main {
+    position: relative;
+  }
+
+  .introduction__hero {
+    align-items: flex-start;
+    background: url("../img/hero-tablet.jpg") no-repeat;
+    height: 745px;
+  }
+
+  .introduction__delivery {
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    position: absolute;
+    width: 250px;
+    right: 27px;
+    top: 6px;
+  }
+
+  .introduction__title {
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    width: 500px;
+    margin-top: 157px;
+    margin-left: 6px;
+  }
+
+  .introduction__catalog {
+    display: flex;
+    top: 625px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .introduction__interior {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 32px;
+    padding-left: 40px;
+    width: 334px;
+    min-height: 120px;
+
+    &::before {
+      left: 263px;
+      top: 33px;
+    }
+
+    .introduction__toys {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 32px;
+      padding-left: 40px;
+      width: 334px;
+      min-height: 120px;
+
+      &::before {
+        left: 245px;
+        top: 35px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+
+  .introduction__hero {
+    align-items: flex-start;
+    background: url("../img/hero-desktop.jpg") no-repeat;
+    height: 745px;
+  }
+
+  .introduction__delivery {
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    position: absolute;
+    width: 250px;
+    right: 80px;
+    top: 3px;
+  }
+
+  .introduction__title {
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: 2px;
+    width: 700px;
+  }
+
+  .introduction__catalog {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .introduction__interior {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 32px;
+    padding-left: 40px;
+    width: 525px;
+    min-height: 120px;
+
+    &::before {
+      left: 450px;
+      top: 33px;
+    }
+  }
+
+  .introduction__toys {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 32px;
+    padding-left: 40px;
+    width: 525px;
+    min-height: 120px;
+
+    &::before {
+      left: 430px;
+      top: 35px;
+    }
   }
 }
