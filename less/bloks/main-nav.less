@@ -2,25 +2,29 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-  display: flex;
-  justify-content: flex-end;
   min-height: 80px;
   background-color: @white;
   border-bottom: 1px solid @grey;
 }
 
-.main-nav__toggle {
-  margin-top: 30px;
-  margin-right: 22px;
+.main-nav__menu {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
+  padding-top: 22px;
+}
+
+.main-nav__toggle {
   border: none;
   background-color: transparent;
+  margin-right: 25px;
 }
 
 .main-nav__popup {
   position: absolute;
   width: 320px;
   top: 80px;
+  right: 0;
   z-index: 1;
 }
 
@@ -47,28 +51,161 @@
   left: 30px;
 }
 
-// @media (min-width: @tablet-width) {
-// .main-nav {
-//   font-size: 17px;
-//   font-weight: bold;
-//   line-height: 24px;
-//   display: flex;
-//   justify-content: flex-end;
-//   min-height: 80px;
-//   background-color: @white;
-//   border-bottom: 1px solid @grey;
-// }
-// }
-//
-// @media (min-width: @desktop-width) {
-// .main-nav {
-//   font-size: 17px;
-//   font-weight: bold;
-//   line-height: 24px;
-//   display: flex;
-//   justify-content: flex-end;
-//   min-height: 80px;
-//   background-color: @white;
-//   border-bottom: 1px solid @grey;
-// }
-// }
+.main-nav__list--desktop {
+display: none;
+}
+
+@media (min-width: @tablet-width) {
+  // Убирает нижнию полосу в навигации
+  .main-nav {
+    border-bottom: none;
+  }
+  // Элементы навигации раставляет по краям, сверху убирает отступ
+  .main-nav__menu {
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  // Убирает гамбургер
+  .main-nav__toggle {
+    display: none;
+  }
+  // Убирает отступ сверху, ставит ширину исходя из типа и содержимого элемента
+  .main-nav__popup {
+    width: auto;
+    top: 0;
+  }
+  // Расположение li
+  .main-nav__list {
+    display: flex;
+  }
+  // Отрывает от общего списка, позиционируется вниз навигации
+  .main-nav__list--tablet {
+    position: absolute;
+    top: 80px;
+    left: -400px;
+  }
+  // Фон прозрачный, уберает верхнию линию, по поречной сначала чтобы выровнить текст
+  .main-nav__item {
+    background-color: transparent;
+    border-top: none;
+    align-items: flex-start;
+  }
+  // Убирает текст, выставляет ширину, убирает отсупы, линия слева
+  .main-nav__item--search {
+    width: 83px;
+    text-indent: -9999px;
+    padding: 0;
+    border-left: 1px solid @grey;
+  }
+  // Линия слева, отступ справа от блока main-nav, выставляет ширину
+  .main-nav__item--basket {
+    border-left: 1px solid @grey;
+    margin-right: 27px;
+    letter-spacing: 1px;
+    width: 210px;
+  }
+  // Размер шрифта, отступ слева и справа
+  .main-nav__item--catalog {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 79px;
+    letter-spacing: 1px;
+  }
+  // Размер шрифта, отступ слева и справа
+  .main-nav__item--order {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+  }
+  // Выравнивает текст для блока basket
+  .main-nav__basket-decription {
+    padding-top: 26px;
+    padding-left: 8px;
+  }
+
+  .main-nav__list--desktop {
+  display: none;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav {
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid @grey;
+  }
+
+  .main-nav__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__popup {
+    width: @desktop-width;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list--tablet {
+    position: relative;
+    left: 96px;
+    top: 4px;
+  }
+
+  .main-nav__item--basket {
+    border-left: 1px solid @grey;
+    margin-right: 0;
+    letter-spacing: 1px;
+    width: 266px;
+  }
+
+  .main-nav__item--catalog {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 55px;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__item--order {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 80px;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__item--order {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 63px;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__basket-decription {
+    padding-top: 25px;
+    padding-left: 0;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__item {
+    box-sizing: border-box;
+  }
+
+  .main-nav__list--desktop {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+  }
+
+  .main-nav__item--sale, .main-nav__item--new {
+     font-size: 15px;
+     letter-spacing: 1px;
+     padding-left: 50px;
+     padding-top: 19px;
+  }
+}
