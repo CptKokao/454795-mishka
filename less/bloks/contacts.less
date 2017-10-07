@@ -1,3 +1,7 @@
+.contacts {
+  margin-top: 90px;
+}
+
 .contacts__title {
   font-size: 18px;
   font-weight: bold;
@@ -10,12 +14,14 @@
     font-size: 15px;
     line-height: 30px;
     padding-left: 30px;
+    margin-top: 25px;
   }
 
   &__address {
     font-size: 15px;
     line-height: 30px;
     padding-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -35,4 +41,133 @@
 
 .contacts__button {
   margin-left: 30px;
+}
+
+.contacts__map {
+  width: 100%;
+  margin-top: 38px;
+}
+
+.contacts__button-wrapper {
+  margin-top: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    position: relative;
+    margin-top: 148px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-left: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      right: 51px;
+      top: -17px;
+    }
+  }
+
+  .contacts {
+    &__email {
+      display: inline-block;
+      font-size: 17px;
+      padding-left: 50px;
+      margin-top: 12px;
+    }
+
+    &__address {
+      display: inline-block;
+      font-size: 17px;
+      margin-left: 54px;
+    }
+  }
+
+  .contacts__email-link {
+    font-size: 17px;
+  }
+
+  .contacts__office {
+    width: 200px;
+  }
+
+  .contacts__button-wrapper {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .contacts__button {
+    margin: 0;
+    width: 230px;
+  }
+
+  .contacts__map {
+    margin-top: 57px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 148px;
+    padding-left: 275px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 0;
+    margin-top: 91px;
+
+    &::before {
+      left: 162px;
+      top: 81px;
+    }
+  }
+
+  .contacts {
+    &__email {
+      font-size: 17px;
+      padding: 0;
+      margin-top: 4px;
+    }
+
+    &__address {
+      font-size: 17px;
+      padding: 0;
+      margin: 30px 0 0;
+    }
+  }
+
+  .contacts__email-link {
+    font-size: 17px;
+  }
+
+  .contacts__office {
+    width: 200px;
+  }
+
+  .contacts__button-wrapper {
+    text-align: left;
+  }
+
+  .contacts__map {
+    position: absolute;
+    width: 525px;
+    height: 457px;
+    right: 100px;
+    top: 20px;
+  }
+
+  .contacts__button {
+    margin: 80px 0 0;
+    width: 230px;
+  }
 }

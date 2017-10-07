@@ -4,15 +4,32 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
-  border-bottom: 1px solid black;
   padding-left: 87px;
   padding-right: 87px;
   margin-left: 30px;
   margin-right: 30px;
+
+  & li:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  & li:nth-child(3) {
+    margin-left: 40px;
+  }
+}
+
+.social__list:nth-child(1) {
+  margin-right: 40px;
 }
 
 .social__item {
   margin-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .social{
+    margin-left: 58px;
+  }
 }
