@@ -1,27 +1,36 @@
 .contacts {
-  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
 
 .contacts__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  padding-left: 30px;
+  padding-left: 73px;
+  width: 320px;
 }
 
 .contacts {
   &__email {
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
     line-height: 30px;
-    padding-left: 30px;
-    margin-top: 25px;
+    margin-top: 10px;
+    width: 245px;
   }
 
   &__address {
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
     line-height: 30px;
-    padding-left: 30px;
     margin-top: 30px;
+
+    width: 245px;
   }
 }
 
@@ -44,7 +53,6 @@
 }
 
 .contacts__map {
-  width: 100%;
   margin-top: 38px;
 }
 

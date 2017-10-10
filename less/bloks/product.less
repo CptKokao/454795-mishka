@@ -1,6 +1,7 @@
 .product {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product__title {
@@ -9,10 +10,20 @@
 }
 
 .product__name {
+  position: relative;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 25px 0 0;
+
+  &::before {
+    content: "Товар недели";
+    position: absolute;
+    top: 33px;
+    font-size: 17px;
+    line-height: 20px;
+    color: @green-light;
+  }
 }
 
 .product__product-week {
@@ -26,7 +37,7 @@
 .product__description {
   font-size: 15px;
   line-height: 24px;
-  margin-top: 5px;
+  margin-top: 48px;
   width: 245px;
 }
 
@@ -34,7 +45,7 @@
   font-size: 15px;
   line-height: 20px;
   border-collapse: collapse;
-  margin-top: 12px;
+  margin-left: 20px;
 }
 
 .product__options {
