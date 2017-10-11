@@ -95,34 +95,36 @@
 
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__column-first">
-        <li class="about-us__column about-us__column--flower">
-          <img class="about-us__icon-flower" src="img/icon-feature-flower.svg" alt="Цветок" width="32" height="37">
-          <p class="about-us__description-flower" class="">Экологически<br> чистые материалы</p>
-        </li>
-        <li class="about-us__column about-us__column--money">
-          <img class="about-us__icon-money" src="img/icon-feature-money.svg" alt="Деньги" width="46" height="27">
-          <p class="about-us__description-money">Скандинавский стиль<br> по российской цене</p>
-        </li>
-        <li class="about-us__column about-us__column--heart">
-          <img class="about-us__icon-heart" src="img/icon-feature-heart.svg" alt="Сердце" width="33" height="29">
-          <p class="about-us__description-heart">Увеличивает лайки<br> на фотографиях</p>
-        </li>
-      </ul>
-      <ul class="about-us__column-second">
-        <li class="about-us__column about-us__column--ball">
-          <img class="about-us__icon-ball" src="img/icon-feature-ball.svg" alt="Мяч" width="34" height="34">
-          <p class="about-us__description-ball">Связано вручную с<br> любовью и умилением</p>
-        </li>
-        <li class="about-us__column about-us__column--rocket">
-          <img class="about-us__icon-rocket" src="img/icon-feature-rocket.svg" alt="Ракета" width="54" height="23">
-          <p class="about-us__description-rocket">Поддержка отечественного<br> производителя</p>
-        </li>
-        <li class="about-us__column about-us__column--gift">
-          <img class="about-us__icon-gift" src="img/icon-feature-gift.svg" alt="Подарок" width="32" height="32">
-          <p class="about-us__description-gift">Поставляется в<br> подарочной упаковке</p>
-        </li>
-      </ul>
+      <div class="about-us__columns">
+        <ul class="about-us__column-first">
+          <li class="about-us__column about-us__column--flower">
+            <img class="about-us__icon-flower" src="img/icon-feature-flower.svg" alt="Цветок" width="32" height="37">
+            <p class="about-us__description-flower" class="">Экологически<br> чистые материалы</p>
+          </li>
+          <li class="about-us__column about-us__column--money">
+            <img class="about-us__icon-money" src="img/icon-feature-money.svg" alt="Деньги" width="46" height="27">
+            <p class="about-us__description-money">Скандинавский стиль<br> по российской цене</p>
+          </li>
+          <li class="about-us__column about-us__column--heart">
+            <img class="about-us__icon-heart" src="img/icon-feature-heart.svg" alt="Сердце" width="33" height="29">
+            <p class="about-us__description-heart">Увеличивает лайки<br> на фотографиях</p>
+          </li>
+        </ul>
+        <ul class="about-us__column-second">
+          <li class="about-us__column about-us__column--ball">
+            <img class="about-us__icon-ball" src="img/icon-feature-ball.svg" alt="Мяч" width="34" height="34">
+            <p class="about-us__description-ball">Связано вручную с<br> любовью и умилением</p>
+          </li>
+          <li class="about-us__column about-us__column--rocket">
+            <img class="about-us__icon-rocket" src="img/icon-feature-rocket.svg" alt="Ракета" width="54" height="23">
+            <p class="about-us__description-rocket">Поддержка отечественного<br> производителя</p>
+          </li>
+          <li class="about-us__column about-us__column--gift">
+            <img class="about-us__icon-gift" src="img/icon-feature-gift.svg" alt="Подарок" width="32" height="32">
+            <p class="about-us__description-gift">Поставляется в<br> подарочной упаковке</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="reviews">
@@ -151,17 +153,22 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__email">
-        <span>e-mail:</span>
-        <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      <div class="1">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__email">
+          <span>e-mail:</span>
+          <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__address">
+          <span>адрес:</span>
+          <p class="contacts__office">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+        </div>
       </div>
-      <div class="contacts__address">
-        <span>адрес:</span>
-        <p class="contacts__office">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+      <div class="2">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123554!2d30.32089461548679!3d59.93879686904862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506449990263"
+          height="455" width="320" style="border:0" allowfullscreen>
+        </iframe>
       </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123554!2d30.32089461548679!3d59.93879686904862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506449990263"
-        height="455" width="320" style="border:0" allowfullscreen></iframe>
       <div class="contacts__button-wrapper">
         <a href="#" class="contacts__button button">Написать нам</a>
         <div>

@@ -63,13 +63,27 @@
 @media (min-width: @tablet-width) {
   .contacts {
     position: relative;
-    margin-top: 148px;
+
+    width: 768px;
+    margin: 0 auto;
+        margin-top: 110px;
+        align-items: center;
+  }
+
+  .1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .2 {
+    width: 768px;
   }
 
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
     padding-left: 50px;
+    width: 768px;
 
     &::before {
       content: "";
@@ -117,6 +131,7 @@
 
   .contacts__map {
     margin-top: 57px;
+    width: 100%;
   }
 }
 @media (min-width: @desktop-width) {
