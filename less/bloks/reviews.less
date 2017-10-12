@@ -1,26 +1,23 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
 }
 
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
-  width: 260px;
-  margin-left: 10px;
+  letter-spacing: 1px;
 }
 
 .reviews__decription {
   font-size: 16px;
   line-height: 30px;
-  width: 260px;
-  margin-top: 4px;
-  margin-left: 10px;
-}
-
-.reviews__contact {
+  margin-top: 5px;
 }
 
 .reviews__name {
@@ -42,7 +39,6 @@
 .reviews_back-next {
   font-size: 0;
   margin-top: 30px;
-  margin-left: 18px;
 }
 
 .reviews__back {
@@ -67,7 +63,8 @@
 
 .reviews__button-wrapper {
   margin-top: 36px;
-  margin-left: 15px;
+  letter-spacing: 1px;
+  padding-left: 2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,8 +100,7 @@
     line-height: 30px;
     letter-spacing: 1px;
     font-weight: normal;
-    margin-top: 8px;
-    width: 768px;
+    margin-top: 0;
   }
 
   .reviews__contact {
@@ -128,7 +124,7 @@
 
   .reviews_back-next {
     order: 5;
-    margin-top: 8px;
+    margin-top: 0;
   }
 
   .reviews__back,
@@ -147,141 +143,35 @@
     width: 173px;
   }
 }
-// @media (min-width: @tablet-width) {
-//   .reviews {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     background: url("../img/review@1x.jpg") no-repeat;
-//     margin-top: 73px;
-//     min-height: 455px;
-//   }
-//
-//   .reviews__title {
-//     order: 1;
-//     font-size: 43px;
-//     line-height: 50px;
-//     margin: 77px 0 0;
-//   }
-//
-//   .reviews__decription {
-//     order: 3;
-//     font-size: 17px;
-//     line-height: 30px;
-//     letter-spacing: 1px;
-//     font-weight: normal;
-//     margin-top: -6px;
-//   }
-//
-//   .reviews__contact {
-//     order: 4;
-//     font-size: 17px;
-//     line-height: 30px;
-//     letter-spacing: 1px;
-//   }
-//
-//   .reviews__name {
-//     font-size: 18px;
-//     line-height: 24px;
-//     margin: 0;
-//   }
-//
-//   .reviews__email {
-//     font-size: 17px;
-//     line-height: 30px;
-//     margin: 3px 0 0;
-//   }
-//
-//   .reviews_back-next {
-//     order: 5;
-//     margin-top: 8px;
-//   }
-//
-//   .reviews__back,
-//   .reviews__next {
-//     border: none;
-//     width: 87px;
-//   }
-//
-//   .reviews__button-wrapper {
-//     order: 2;
-//     margin: 78px 0 0;
-//   }
-//
-//   .reviews__button {
-//     width: 173px;
-//   }
-//
-//   .reviews__contact {
-//     order: 4;
-//     font-size: 17px;
-//     line-height: 30px;
-//     letter-spacing: 1px;
-//   }
-//
-//   .reviews__name {
-//     font-size: 18px;
-//     line-height: 24px;
-//     margin: 0;
-//   }
-//
-//   .reviews__email {
-//     font-size: 17px;
-//     line-height: 30px;
-//     margin: 3px 0 0;
-//   }
-//
-//   .reviews_back-next {
-//     order: 5;
-//     margin-top: 8px;
-//   }
-//
-//   .reviews__back,
-//   .reviews__next {
-//     border: none;
-//     width: 87px;
-//   }
-//
-//   .reviews__button-wrapper {
-//     order: 2;
-//     margin: 78px 0 0;
-//   }
-//
-//   .reviews__button {
-//     width: 173px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .reviews {
-//     align-items: flex-start;
-//     padding-left: 275px;
-//     padding-right: 100px;
-//     background: url("../img/review@1x.jpg") no-repeat 100px 0;
-//     margin-top: 73px;
-//     min-height: 455px;
-//   }
-//
-//   .reviews__title {
-//     order: 1;
-//     font-size: 53px;
-//     line-height: 57px;
-//     margin-top: 76px;
-//   }
-//
-//   .reviews__decription {
-//     order: 3;
-//     margin-top: 22px;
-//     width: 825px;
-//   }
-//
-//   .reviews__contact {
-//     margin-bottom: 60px;
-//   }
-//
-//   .reviews__button-wrapper {
-//     margin-top: 76px;
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .reviews {
+    align-items: flex-start;
+    padding-left: 275px;
+    padding-right: 100px;
+    background: url("../img/review@1x.jpg") no-repeat 100px 0;
+    margin-top: 70px;
+    min-height: 455px;
+    width: 1250px;
+  }
+
+  .reviews__title {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 70px;
+  }
+
+  .reviews__decription {
+    order: 3;
+    margin-top: 22px;
+    width: 825px;
+  }
+
+  .reviews__contact {
+    margin-bottom: 70px;
+  }
+
+  .reviews__button-wrapper {
+    margin-top: 76px;
+  }
+}

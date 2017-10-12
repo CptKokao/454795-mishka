@@ -1,31 +1,78 @@
 .about-us {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  letter-spacing: 1px;
+  width: 260px;
+  margin: 0 auto;
+
+  &__icon-flower {
+    margin-left: 10px;
+  }
+
+  &__description-flower {
+    margin-top: 15px;
+  }
+
+  &__icon-money {
+    margin-left: 3px;
+  }
+
+  &__description-money {
+    margin-top: 21px;
+  }
+
+  &__icon-heart {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+
+  &__description-heart {
+    margin-top: 15px;
+  }
+
+  &__icon-ball {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+  &__description-ball {
+    margin-top: 13px;
+  }
+
+  &__icon-rocket {
+    margin-left: -4px;
+    margin-top: 2px;
+  }
+
+  &__description-rocket {
+    margin-top: 23px;
+  }
+
+  &__icon-gift {
+    margin-left: 2px;
+  }
+
+  &__description-gift {}
 }
 
 .about-us__title {
   width: 320px;
-  margin-left: 63px;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 0;
   margin-top: 70px;
 }
 
-
 .about-us__column-first {
   margin: 0;
   padding: 0;
-    width: 320px;
-    margin-left: 70px;
+  width: 320px;
 }
 
 .about-us__column-second {
   margin: 0;
   padding: 0;
-    width: 320px;
-    margin-left: 70px;
+  width: 320px;
 }
 
 .about-us__column {
@@ -36,23 +83,72 @@
   padding: 0;
   list-style: none;
 }
-
 @media (min-width: @tablet-width) {
   .about-us {
     align-items: flex-start;
     width: 768px;
-    margin: 0 auto;
+    margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    box-sizing: border-box;
+
+    &__icon-flower {
+      margin-left: 15px;
+    }
+
+    &__description-flower {
+      margin-top: 18px;
+    }
+
+    &__icon-money {
+      margin-left: 5px;
+    }
+
+    &__description-money {
+      margin-top: 26px;
+    }
+
+    &__icon-heart {
+      margin-left: 13px;
+      margin-top: 5px;
+    }
+
+    &__description-heart {
+      margin-top: 18px;
+    }
+
+    &__icon-ball {
+      margin-left: 12px;
+      margin-top: 8px;
+    }
+
+    &__description-ball {
+      margin-top: 13px;
+    }
+
+    &__icon-rocket {
+      margin-left: 4px;
+      margin-top: 4px;
+    }
+
+    &__description-rocket {
+      margin-top: 26px;
+      margin-left: 8px;
+    }
+
+    &__icon-gift {
+      margin-left: 12px;
+    }
+
+    &__description-gift {
+      margin-left: 8px;
+    }
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
     width: auto;
-    margin: 0;
-    margin-top: 120px;
-    margin-left: 50px;
     letter-spacing: 1px;
   }
 
@@ -68,14 +164,12 @@
     font-size: 20px;
     line-height: 22px;
     margin-top: 15px;
-    width: 320px;
   }
 
   .about-us__column-second {
-    width: 320px;
     margin-left: 20px;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .about-us__column {
@@ -83,19 +177,74 @@
     line-height: 22px;
   }
 
-  .about-us__column--money, .about-us__column--rocket {
+  .about-us__column--money,
+  .about-us__column--rocket {
     margin-top: 56px;
   }
 
-  .about-us__column--heart, .about-us__column--gift {
+  .about-us__column--gift,
+  .about-us__column--heart {
     margin-top: 56px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .about-us {
+    width: 1250px;
+    margin-top: 155px;
     padding-left: 275px;
     padding-right: 275px;
+
+    &__icon-flower {
+      margin-left: 15px;
+    }
+
+    &__description-flower {
+      margin-top: 18px;
+    }
+
+    &__icon-money {
+      margin-left: 5px;
+    }
+
+    &__description-money {
+      margin-top: 26px;
+    }
+
+    &__icon-heart {
+      margin-left: 13px;
+      margin-top: 5px;
+    }
+
+    &__description-heart {
+      margin-top: 18px;
+    }
+
+    &__icon-ball {
+      margin-left: 12px;
+      margin-top: 8px;
+    }
+
+    &__description-ball {
+      margin-top: 13px;
+    }
+
+    &__icon-rocket {
+      margin-left: 4px;
+      margin-top: 4px;
+    }
+
+    &__description-rocket {
+      margin-top: 26px;
+      margin-left: 8px;
+    }
+
+    &__icon-gift {
+      margin-left: 12px;
+    }
+
+    &__description-gift {
+      margin-left: 8px;
+    }
   }
 
   .about-us__title {
@@ -103,10 +252,15 @@
     line-height: 57px;
     margin-top: 158px;
     letter-spacing: 1px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .about-us__column {
     letter-spacing: 1px;
+  }
+
+  .about-us__column-first {
   }
 
   .about-us__column-second {

@@ -1,3 +1,7 @@
+.social {
+  width: 220px;
+  margin: 0 auto;
+}
 .social__list {
   margin: 0;
   padding: 0;
@@ -8,7 +12,7 @@
   align-items: baseline;
   padding-left: 87px;
   padding-right: 87px;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-right: 30px;
 
   & li:nth-child(1) {
@@ -21,15 +25,33 @@
 }
 
 .social__list:nth-child(1) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .social__item {
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 @media (min-width: @tablet-width) {
   .social{
-    margin-left: 58px;
+    margin: 0;
+    margin-left: 130px;
   }
+
+  .social__item {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .social{
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .social__item {
+    margin-top: 0;
+  }
+
 }
