@@ -53,7 +53,11 @@
     <section class="catalog">
       <div class="catalog__product">
         <div class="catalog__product-photo">
-          <img class="catalog__product-image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <picture class="catalog__product-image">
+            <!-- <source type="" srcset="" media="" (min-width: 1050px)"> -->
+            <source type="" srcset="img/photo-hare-tablet@1x.jpg" media="(min-width: 768px)">
+            <img type="" srcset="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
         </div>
         <div class="catalog__wrapper">
           <div class="catalog__description">

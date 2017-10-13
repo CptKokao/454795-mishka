@@ -70,17 +70,24 @@ flex-direction: column;
 .catalog__basket {
   margin-top: 20px;
 }
+
+.catalog__product-image {
+  width: 260px;
+  height: 195px;
+}
+
 @media (min-width: @tablet-width) {
   .catalog {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 80px;
-  }
-
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
   .catalog__product {
     display: flex;
     flex-direction: row;
-    width: 665px;
+    width: 668px;
     height: 335px;
     margin-bottom: 50px;
   }
@@ -103,6 +110,11 @@ flex-direction: column;
 
   .catalog__product-price {
     font-size: 17px;
+  }
+
+  .catalog__product-photo {
+    width: 334px;
+    height: 334px;
   }
 }
 @media (min-width: @desktop-width) {

@@ -69,12 +69,20 @@
 }
 @media (min-width: @tablet-width) {
   .production {
-    // margin-top: 50px;
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
     min-height: 708px;
-    margin-left: 50px;
-    margin-right: 50px;
     display: flex;
     flex-direction: column;
+  }
+
+  .production-wrapper {
+    width: 668px;
+    min-height: 500px;
+    margin-top: 30px;
+    border: 1px solid @grey;
   }
 
   .production__title {
