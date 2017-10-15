@@ -1,9 +1,8 @@
 .order-main__wrapper-title {
   min-height: 175px;
   background-color: @grey-light;
-  text-align: center;
+  padding-top: 70px;
   box-sizing: border-box;
-  padding-top: 50px;
 }
 
 .order-main__title {
@@ -11,19 +10,23 @@
   font-weight: bold;
   line-height: 30px;
   letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
 }
 
 .order-main__decription {
+  width: 260px;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 1px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
+  margin-top: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .order-main__wrapper-title {
     min-height: 225px;
+    min-height: 250px;
   }
 
   .order-main__title {
@@ -34,8 +37,26 @@
   .order-main__decription {
     font-size: 17px;
     line-height: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 73px;
+width: 668px;
+  margin-top: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-main__wrapper-title {
+    padding-top: 95px;
+  }
+
+  .order-main__title {
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: 2px;
+  }
+
+  .order-main__decription {
+    font-size: 17px;
+    line-height: 30px;
+width: 700px;
+  margin-top: 125px;
   }
 }
