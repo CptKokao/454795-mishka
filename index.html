@@ -39,6 +39,7 @@
           <li class="main-nav__item main-nav__item--new"><a href="#">Новые поступления</a></li>
           <li class="main-nav__item main-nav__item--sale"><a href="#">Распродажа</a></li>
         </ul>
+        <p class="order-main__delivery">Бесплатная доставка по России</p>
       </div>
       <a href="#" class="logo"></a>
     </nav>
@@ -48,7 +49,6 @@
     <h1 class="visually-hidden">Товары ручной работы</h1>
     <section class="introduction">
       <div class="introduction__hero">
-        <p class="introduction__delivery">Бесплатная доставка по России</p>
         <h2 class="introduction__title">Милые штуки ручной<br> работы для дома</h2>
       </div>
       <div class="introduction__catalog">
@@ -87,7 +87,11 @@
         </tr>
       </table>
       <div class="product__image">
-        <img class="product__triple-set-mobile" src="img/triple-set-mobile@1x.jpg" alt="" width="260" height="315">
+        <picture class="product__triple-set">
+          <source type=""srcset="img/triple-set-desktop@1x.jpg" media="(min-width: 1200px)">
+          <source type="" srcset="img/triple-set-tablet@1x.jpg" media="(min-width: 768px)">
+          <img type="" srcset="img/triple-set-mobile@1x.jpg" alt="Сет">
+        </picture>
       </div>
       <p class="product__price">Цена: 990 руб.</p>
       <a href="#" class="product__link button">Заказать</a>
