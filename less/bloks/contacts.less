@@ -3,20 +3,7 @@
   flex-direction: column;
   width: 320px;
   margin: 58px auto 40px;
-}
 
-.contants__wrapper-text {
-  margin-left: 25px;
-}
-
-.contacts__title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  letter-spacing: 1px;
-}
-
-.contacts {
   &__email {
     display: flex;
     font-size: 15px;
@@ -33,6 +20,17 @@
   }
 }
 
+.contants__wrapper-text {
+  margin-left: 25px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
 .contacts__email-link {
   font-size: 15px;
   text-transform: lowercase;
@@ -44,10 +42,6 @@
 .contacts__office {
   width: 150px;
   margin: 0 0 0 35px;
-}
-
-.contacts__button {
-  margin-left: 30px;
 }
 
 .contants__wrapper-map {
@@ -62,12 +56,28 @@
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 1px;
+  margin-left: 30px;
 }
+
 @media (min-width: @tablet-width) {
   .contacts {
     position: relative;
     width: 768px;
     margin: 110px auto 60px;
+
+    &__email {
+      align-items: baseline;
+      font-size: 17px;
+      padding-left: 50px;
+      margin-top: 12px;
+    }
+
+    &__address {
+      font-size: 17px;
+      width: 300px;
+      margin-left: 65px;
+      margin-top: 14px;
+    }
   }
 
   .contants__wrapper-text {
@@ -75,10 +85,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
-  }
-
-  .contants__wrapper-map {
-    width: 768px;
   }
 
   .contacts__title {
@@ -95,22 +101,6 @@
       background: url("../img/icon-flag.svg") no-repeat;
       right: 51px;
       top: 20px;
-    }
-  }
-
-  .contacts {
-    &__email {
-      align-items: baseline;
-      font-size: 17px;
-      padding-left: 50px;
-      margin-top: 12px;
-    }
-
-    &__address {
-      font-size: 17px;
-      width: 300px;
-      margin-left: 65px;
-      margin-top: 14px;
     }
   }
 
@@ -148,6 +138,7 @@
     margin: 51px auto 0;
   }
 }
+
 @media (min-width: @desktop-width) {
   .contacts {
     display: flex;
@@ -159,6 +150,18 @@
     padding-right: 100px;
     width: 875px;
     align-items: flex-start;
+
+    &__email {
+      font-size: 17px;
+      padding: 0;
+      margin-top: 4px;
+    }
+
+    &__address {
+      font-size: 17px;
+      padding: 0;
+      margin: 30px 0 0;
+    }
   }
 
   .contacts__title {
@@ -170,20 +173,6 @@
     &::before {
       left: 162px;
       top: 81px;
-    }
-  }
-
-  .contacts {
-    &__email {
-      font-size: 17px;
-      padding: 0;
-      margin-top: 4px;
-    }
-
-    &__address {
-      font-size: 17px;
-      padding: 0;
-      margin: 30px 0 0;
     }
   }
 
