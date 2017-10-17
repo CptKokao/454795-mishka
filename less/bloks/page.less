@@ -1,5 +1,17 @@
 .page {
-  width: 320px;
+  min-width: @mobile-width;
   margin: 0 auto;
   font-family: @font-face;
+}
+
+@media (min-width: @tablet-width) {
+  .page {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page {
+    min-width: 1250px;
+  }
 }

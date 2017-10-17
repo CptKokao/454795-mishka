@@ -1,14 +1,19 @@
 .introduction {
   min-height: 490px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .introduction__hero {
-  align-items: center;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: -125px -20px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-position: -130px -18px;
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.introduction__delivery {
+  display: none;
 }
 
 .introduction__title {
@@ -21,20 +26,16 @@
   min-height: 280px;
   width: 280px;
   margin-top: 70px;
-  margin-left: 3px;
 }
 
 .introduction__catalog {
   position: absolute;
   width: 320px;
-  top: 361px;
+  top: 364px;
 }
 
-.introduction__list-interior {
+.introduction__interior {
   background-color: @green-light;
-}
-
-.introduction__link-interior {
   font-family: @font-face;
   font-weight: bold;
   font-size: 19px;
@@ -44,7 +45,7 @@
   color: @white;
   display: block;
   min-height: 103px;
-  width: 130px;
+  width: 320px;
   position: relative;
   padding-top: 26px;
   padding-left: 30px;
@@ -57,16 +58,13 @@
     position: absolute;
     background: url("../img/icon-interior.svg") no-repeat;
     opacity: 0.5;
-    left: 245px;
-    top: 25px;
+    left: 243px;
+    top: 23px;
   }
 }
 
-.introduction__list-toys {
+.introduction__toys {
   background-color: @green-dark;
-}
-
-.introduction__link-toys {
   font-family: @font-face;
   font-weight: bold;
   font-size: 19px;
@@ -76,7 +74,7 @@
   color: @white;
   display: block;
   min-height: 103px;
-  width: 130px;
+  width: 320px;
   position: relative;
   padding-top: 26px;
   padding-left: 30px;
@@ -89,7 +87,146 @@
     position: absolute;
     background: url("../img/icon-toy.svg") no-repeat;
     opacity: 0.5;
-    left: 245px;
-    top: 25px;
+    left: 232px;
+    top: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .introduction {
+    min-height: 490px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .introduction-main {
+    position: relative;
+  }
+
+  .introduction__hero {
+    align-items: flex-start;
+    background: url("../img/hero-tablet.jpg") no-repeat;
+    height: 745px;
+  }
+
+  .introduction__delivery {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    position: absolute;
+    width: 250px;
+    right: 27px;
+    top: 6px;
+  }
+
+  .introduction__title {
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    width: 500px;
+    margin-top: 154px;
+  }
+
+  .introduction__catalog {
+    display: flex;
+    top: 625px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .introduction__interior {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 35px;
+    width: 334px;
+    min-height: 120px;
+
+    &::before {
+      left: 257px;
+      top: 31px;
+    }
+  }
+
+  .introduction__toys {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 35px;
+    width: 334px;
+    min-height: 120px;
+
+    &::before {
+      left: 241px;
+      top: 32px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introduction {
+    width: 1250px;
+  }
+
+  .introduction__hero {
+    align-items: flex-start;
+    background: url("../img/hero-desktop.jpg") no-repeat;
+    height: 745px;
+  }
+
+  .introduction__delivery {
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    position: absolute;
+    width: 250px;
+    right: 80px;
+    top: 3px;
+  }
+
+  .introduction__title {
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: 2px;
+    width: 700px;
+  }
+
+  .introduction__catalog {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .introduction__interior {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 29px;
+    padding-left: 36px;
+    width: 525px;
+    min-height: 120px;
+
+    &::before {
+      left: 450px;
+      top: 33px;
+    }
+  }
+
+  .introduction__toys {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 29px;
+    padding-left: 37px;
+    width: 525px;
+    min-height: 120px;
+
+    &::before {
+      left: 430px;
+      top: 35px;
+    }
   }
 }
