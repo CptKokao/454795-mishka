@@ -20,7 +20,7 @@
 .main-nav__toggle {
   border: none;
   background-color: transparent;
-  margin-right: 27px;
+  margin-right: 25px;
 }
 
 .main-nav__popup {
@@ -85,6 +85,8 @@
   }
 
   .main-nav__list--tablet {
+    font-size: 15px;
+    letter-spacing: 1px;
     position: absolute;
     top: 109px;
     left: 0;
@@ -109,7 +111,7 @@
 
   .main-nav__item--order {
     padding: 0;
-    margin-left: 25px;
+    margin-left: 29px;
     min-height: 0;
     background-color: transparent;
   }
@@ -122,9 +124,9 @@
   }
 
   .main-nav__item--basket {
-    width: 252px;
+    width: 189px;
+    font-size: 18px;
     border-left: 1px solid @grey;
-    padding: 0 13px 0 0;
   }
 
   .main-nav__icon {
@@ -145,14 +147,16 @@
   }
 
   .main-nav__list--tablet {
+    font-size: 17px;
     position: relative;
     top: 0;
   }
 
   .main-nav__list--desktop {
+    font-size: 15px;
     display: flex;
     position: absolute;
-    top: 110px;
+    top: 108px;
   }
 
   .main-nav__item--search {
@@ -164,17 +168,26 @@
 
   .main-nav__item--order {
     min-height: 90px;
-    margin-left: 80px;
+    margin-left: 35px;
   }
 
   .main-nav__item--catalog {
     min-height: 90px;
+    padding-right: 30px;
+    border-right: 1px solid #ececec;
   }
 
-  .main-nav__item--new,
+  .main-nav__item--new {
+    min-height: 0;
+    padding-left: 53px;
+    background-color: transparent;
+    letter-spacing: 1px;
+  }
+
   .main-nav__item--sale {
     min-height: 0;
     padding-left: 50px;
     background-color: transparent;
+    letter-spacing: 1px;
   }
 }

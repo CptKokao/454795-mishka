@@ -1,8 +1,8 @@
 .product {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  margin: 6px auto 0;
+  align-items: center;
+  margin-top: 6px;
 }
 
 .product__title {
@@ -15,6 +15,7 @@
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 1px;
+  width: 260px;
 
   &::before {
     content: "Товар недели";
@@ -37,8 +38,8 @@
 .product__description {
   font-size: 15px;
   line-height: 24px;
-  margin-top: 29px;
-  width: 245px;
+  margin-top: 28px;
+  width: 260px;
 }
 
 .product__feature-list {
@@ -63,18 +64,19 @@
 }
 
 .product__image {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .product__price {
   font-size: 17px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-right: 4px;
 }
 
 .product__link {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 @media (min-width: @tablet-width) {
@@ -96,11 +98,12 @@
     font-size: 43px;
     line-height: 50px;
     margin-top: 47px;
+    width: 525px;
 
     &::before {
       content: "Товар недели";
       top: 10px;
-      right: -240px;
+      right: -124px;
       width: 81px;
       text-transform: uppercase;
       text-align: center;
@@ -120,7 +123,7 @@
 
   .product__image {
     position: absolute;
-    top: 120px;
+    top: 124px;
     right: 50px;
   }
 
@@ -133,14 +136,14 @@
   }
 
   .product__feature-list {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .product__price {
     font-size: 20px;
     line-height: 24px;
     margin-left: 70px;
-    margin-top: 55px;
+    margin-top: 58px;
     letter-spacing: 1px;
   }
 
@@ -171,7 +174,8 @@
 
     &::before {
       content: "Товар недели";
-      left: -135px;
+      left: -130px;
+      top: 15px;
     }
   }
 
@@ -182,8 +186,8 @@
 
   .product__image {
     position: absolute;
-    top: -35px;
-    right: 100px;
+    top: -32px;
+    right: 98px;
   }
 
   .product__description {
@@ -191,14 +195,16 @@
   }
 
   .product__feature-list {
-    margin-top: 33px;
+    margin-top: 29px;
   }
 
   .product__price {
-    margin-top: 109px;
+    margin-top: 108px;
+    margin-left: 73px;
   }
 
   .product__link {
     margin-top: 15px;
+    margin-left: 3px;
   }
 }
