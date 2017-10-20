@@ -13,9 +13,11 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // @media(min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  // background-image: url("../img/hero-mobile@2x.jpg");
-  // }
+
+  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-size: 575px auto;
+  }
 }
 
 .introduction__delivery {
@@ -107,10 +109,15 @@
 
   .introduction__hero {
     align-items: flex-start;
-    background: url("../img/hero-tablet.jpg") no-repeat;
+    background: url("../img/hero-tablet@1x.jpg") no-repeat;
     background-position: -10px;
     width: 748px;
     height: 745px;
+
+    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-tablet@2x.jpg");
+    background-size: 1150px auto;
+    }
   }
 
   .introduction__delivery {
@@ -174,9 +181,14 @@
 @media (min-width: @desktop-width) {
   .introduction__hero {
     align-items: flex-start;
-    background: url("../img/hero-desktop.jpg") no-repeat;
+    background: url("../img/hero-desktop@1x.jpg") no-repeat;
     height: 745px;
     width: 1250px;
+
+    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 1150px auto;
+    }
   }
 
   .introduction__delivery {
