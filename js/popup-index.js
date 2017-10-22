@@ -3,5 +3,5 @@ var navPopup = document.querySelector(".main-nav__popup");
 
 navToggle.addEventListener("click", function (evt) {
 evt.preventDefault();
-    navPopup.classList.toggle("visually-hidden");
+    navPopup.classList.toggle("main-nav__popup--close");
 });
