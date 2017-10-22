@@ -1,4 +1,5 @@
 .introduction {
+  position: relative;
   min-height: 490px;
   margin: 0 auto;
   background-color: @grey-background;
@@ -13,10 +14,9 @@
   display: flex;
   justify-content: center;
   position: relative;
-
-  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  background-image: url("../img/hero-mobile@2x.jpg");
-  background-size: 575px auto;
+  @media(min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
   }
 }
 
@@ -38,7 +38,7 @@
 .introduction__catalog {
   position: absolute;
   width: 320px;
-  top: 364px;
+  top: 281px;
 }
 
 .introduction__interior {
@@ -66,6 +66,23 @@
     opacity: 0.5;
     left: 243px;
     top: 23px;
+  }
+
+  &:hover {
+    min-height: 108px;
+    padding-top: 21px;
+
+    &::before {
+      top: 18px;
+    }
+  }
+
+  &:active {
+    color: @green-btn;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -95,12 +112,39 @@
     left: 232px;
     top: 20px;
   }
+
+  &:hover {
+    min-height: 108px;
+    padding-top: 21px;
+
+    &::before {
+      top: 15px;
+    }
+  }
+
+  &:active {
+    color: @green-btn;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .introduction {
     min-height: 490px;
     margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 40px;
+      bottom: -27px;
+      background: url("../img/zigzag-line.svg") repeat-x;
+      background-size: 40px auto;
+    }
   }
 
   .introduction-main {
@@ -110,13 +154,12 @@
   .introduction__hero {
     align-items: flex-start;
     background: url("../img/hero-tablet@1x.jpg") no-repeat;
-    background-position: -10px;
+    background-position: -200px;
     width: 748px;
     height: 745px;
-
     @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/hero-tablet@2x.jpg");
-    background-size: 1150px auto;
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
     }
   }
 
@@ -142,9 +185,11 @@
   .introduction__catalog {
     display: flex;
     top: 625px;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 668px;
+
+    &:hover {
+      top: 620px;
+    }
   }
 
   .introduction__interior {
@@ -159,6 +204,15 @@
     &::before {
       left: 257px;
       top: 31px;
+    }
+
+    &:hover {
+      min-height: 125px;
+      padding-top: 25px;
+
+      &::before {
+        top: 26px;
+      }
     }
   }
 
@@ -175,19 +229,42 @@
       left: 241px;
       top: 32px;
     }
+
+    &:hover {
+      min-height: 125px;
+      padding-top: 25px;
+
+      &::before {
+        top: 26px;
+      }
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .introduction {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 40px;
+      background: url("../img/zigzag-line.svg") repeat-x;
+      background-size: 50px auto;
+      bottom: -25px;
+    }
+  }
+
   .introduction__hero {
     align-items: flex-start;
     background: url("../img/hero-desktop@1x.jpg") no-repeat;
     height: 745px;
     width: 1250px;
-
     @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 1150px auto;
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1250px auto;
+      background-position: 0 -38px;
     }
   }
 
@@ -210,8 +287,7 @@
   }
 
   .introduction__catalog {
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 1050px;
   }
 
   .introduction__interior {

@@ -1,0 +1,126 @@
+.cart-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cart-popup--show {
+  display: block;
+}
+
+.cart-popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 336px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -168px;
+  margin-left: -160px;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px #cccccc;
+}
+
+.cart-popup__title {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cart-popup__msg {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.cart-popup__input {
+  display: none;
+}
+
+.cart-popup__radio-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.cart-popup__label {
+  font-size: 17px;
+  line-height: 16px;
+  color: @border-btn;
+  font-weight: bold;
+  display: block;
+  width: 80px;
+  height: 50px;
+  border: 2px solid #ececec;
+  text-align: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+}
+
+.cart-popup__input:checked + .cart-popup__label {
+  border-color: #63d1bb;
+}
+
+.cart-popup__button {
+  margin-top: 32px;
+  width: 260px;
+  border: none;
+  background-color: #63d1bb;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .cart-popup__wrapper {
+    width: 566px;
+    height: 336px;
+    margin-left: -283px;
+  }
+
+  .cart-popup__radio-wrapper {
+    width: 350px;
+  }
+
+  .cart-popup__label {
+    display: block;
+    width: 112px;
+    height: 52px;
+    border: 2px solid #ececec;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  .cart-popup__title {
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-top: 45px;
+  }
+
+  .cart-popup__break {
+    display: none;
+  }
+
+  .cart-popup__msg {
+    font-size: 17px;
+  }
+
+  .cart-popup__button {
+    width: 350px;
+  }
+}
