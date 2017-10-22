@@ -15,7 +15,7 @@
     display: flex;
     font-size: 15px;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 32px;
     width: 245px;
   }
 }
@@ -37,6 +37,15 @@
   font-weight: normal;
   border-bottom: 1px solid @green-light;
   margin-left: 35px;
+
+  &:hover {
+    color: #77d2c4;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__office {
@@ -46,16 +55,26 @@
 
 .contants__wrapper-map {
   margin-top: 38px;
+  width: 320px;
+  height: 455px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 322px auto;
+  }
 }
 
 .contacts__wrapper-button {
-  margin-top: 35px;
+  margin-top: 39px;
 }
 
 .contacts__button {
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin-left: 30px;
 }
 
@@ -128,6 +147,15 @@
   .contants__wrapper-map {
     margin-top: 57px;
     width: 768px;
+    height: 457px;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .contacts__map {
@@ -135,7 +163,7 @@
   }
 
   .contacts__wrapper-button {
-    margin: 52px auto 0;
+    margin: 55px auto 0;
   }
 }
 
@@ -154,13 +182,15 @@
     &__email {
       font-size: 17px;
       padding: 0;
-      margin-top: 2px;
+      margin-top: 5px;
+      margin-left: 4px;
     }
 
     &__address {
       font-size: 17px;
       padding: 0;
-      margin: 30px 0 0;
+      margin-top: 29px;
+      margin-left: 1px;
     }
   }
 
@@ -171,13 +201,13 @@
     margin-top: 90px;
 
     &::before {
-      left: 162px;
+      left: 167px;
       top: 81px;
     }
   }
 
   .contacts__email-link {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .contacts__office {
@@ -186,7 +216,7 @@
   }
 
   .contacts__wrapper-button {
-    margin: 3px 0 0;
+    margin: 4px 4px 0;
   }
 
   .contacts__button {
@@ -201,8 +231,17 @@
 
   .contants__wrapper-map {
     width: 525px;
+    height: 457px;
     position: absolute;
-    right: 100px;
+    right: 98px;
     top: -38px;
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 525px auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 1050px auto;
+    }
   }
 }

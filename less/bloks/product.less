@@ -24,6 +24,8 @@
     font-size: 17px;
     line-height: 20px;
     color: @green-light;
+    text-transform: uppercase;
+    letter-spacing: 0;
   }
 }
 
@@ -36,7 +38,7 @@
 }
 
 .product__description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   margin-top: 28px;
   width: 260px;
@@ -64,19 +66,35 @@
 }
 
 .product__image {
+  width: 260px;
+  height: 315px;
   margin-top: 28px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 520px auto;
+  }
 }
 
 .product__price {
   font-size: 17px;
   font-weight: bold;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: 4px;
 }
 
 .product__link {
   margin-top: 11px;
+
+  &:hover {
+    background-color: @border-btn;
+    color: @white;
+  }
+
+  &:active {
+    color: @btn-active;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -122,9 +140,16 @@
   }
 
   .product__image {
+    width: 333px;
+    height: 404px;
     position: absolute;
     top: 124px;
     right: 50px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 666px auto;
+    }
   }
 
   .product__description {
@@ -185,9 +210,16 @@
   }
 
   .product__image {
+    width: 525px;
+    height: 636px;
     position: absolute;
     top: -32px;
     right: 98px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1050px auto;
+    }
   }
 
   .product__description {
@@ -195,7 +227,7 @@
   }
 
   .product__feature-list {
-    margin-top: 29px;
+    margin-top: 33px;
   }
 
   .product__price {
